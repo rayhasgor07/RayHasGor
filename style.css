@@ -24,7 +24,7 @@ button{
   background:#7CB9E4; 
   color:white;
   align-items: center;
-  border: cadetblue;
+  border: lightblue;
   border-radius: 20px;
   padding:10px;
   margin:15px;
@@ -37,12 +37,13 @@ button{
     border-radius: 15px; 
     display: flex;
     flex-direction: column;
-    background-color: cadetblue;
+    background-color: darkcyan;
     text-align: center;
-    margin:5px;   
-    width:33%;   
+    margin:5px; 
+    margin-bottom:20px;  
+    width:10%;   
     height:100%;
-    font-size:75%;
+    font-size:90%;
     transition: ease-out 0.5s;
 }
 
