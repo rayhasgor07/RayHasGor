@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: skyblue">
     <header>
-      <nav>
+      <nav class="glass">
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
@@ -19,27 +19,25 @@
       </nav>
     </header>
 
-    <section class="intro">
+    <section class="glass">
       <h1>Rayyan Hasan Goraya</h1>
-      <p>Incoming Mathematics Student @ UWaterloo And Aspiring Game Developer</p>
-      <a target="_blank" href="https://www.canva.com/design/DAGk_xShBjA/4bO8bjuwb9QUAG0JFmt4UA/edit?utm_content=DAGk_xShBjA&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton" 
-      style="border-style: solid;border-color: white; text-decoration: none; color:white;align-items: center; text-align: center; align-self: center;border-radius: 20px;padding:10px;margin:5px; background-color: cadetblue;">Hire Me</a>
-      <section>
-        <a href="https://www.linkedin.com/in/rayyanhasangoraya" target="_blank">
+      <p style="margin-bottom:20px">Mathematics Student @ UWaterloo | Car Enthusiast | Seeking Fall 2026 Internships</p>
+      <a target="_blank" class="glass-btn" href="./Resume.pdf" style="background-color: cadetblue; text-decoration: none;">Hire Me</a>
+      <section style="display:flex; flex-direction:row; background-color: transparent;">
+        <a class="glass-btn" href="https://www.linkedin.com/in/rayyanhasangoraya" target="_blank">
           <i style="font-size:18px; margin-left:3px; text-decoration: none; color: white; " class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://www.instagram.com/rayhasgor07/" target="_blank">
+        <a class="glass-btn" href="https://www.instagram.com/rayhasgor07/" target="_blank">
           <i style="font-size:18px; margin-left:3px; text-decoration: none; color: white; " class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://github.com/cr7coder123" target="_blank">
+        <a class="glass-btn" href="https://github.com/rayhasgor07" target="_blank">
           <i style="font-size:17px; margin:0px; text-decoration: none; color: white; " class="fa-brands fa-github"></i>
         </a>
       </section>
     </section>
 
     <div class="container">
-
-      <section id="about">
+      <section class="glass"id="about">
         <h2>About Me</h2>
         <div class="about-flex">
           <img src="Images/Profile.png" alt="Profile photo" class="profile-pic" />
@@ -51,15 +49,15 @@
         </div>
       </section>
 
-      <section id="education">
+      <section class="glass"id="education">
         <h2>Education</h2><br/>
         <div class="subheadings">
-          <section style="background-color: lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>University of Waterloo</h3>
             <img style=" width: 150px; height: 150px;" src="Images/Waterloo.png"/>
             <h4>Bachelor of Mathematics (BMath) Degree</h4>
             <h4>2025-2030</h4>
-             <button onclick="toggleDropdown('waterloo-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('waterloo-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="waterloo-desc" class="showDiv">
             <p>
               Accepted into the Honours Mathematics program with a $2,000 entrance scholarship. I plan to major in Computational Mathematics with a minor in Computing. 
@@ -67,12 +65,12 @@
             </p>
           </div>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>White Oaks Secondary School</h3>
             <img style=" width: 150px; height: 150px;" src="Images/White Oaks.png"/>
             <h4>Ontario Secondary School Diploma (OSSD)</h4>
             <h4>2020-2025</h4>
-             <button onclick="toggleDropdown('whiteoaks-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('whiteoaks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="whiteoaks-desc" class="showDiv">
             <p>
              Completed high school and developed strong problem-solving, teamwork, and communication skills through coursework and extracurricular involvement. 
@@ -86,27 +84,27 @@
         </div>
       </section>
 
-      <section id="experience">
+      <section class="glass"id="experience">
         <h2>Experience</h2><br/>
-        <div class="subheadings">
-          <section style="background-color: lightseagreen; width:100%">
-            <h3>540 Golden Hawks Air Cadet Squadron</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/Cadets.png"/>
-            <h4>Flight Sergeant</h4>
-            <h4>2020-2025</h4>
-            <button onclick="toggleDropdown('goldenHawks-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+         <div class="subheadings">
+          <section class="sub-card">
+            <h3>Waterloo CS and DS Club</h3>
+            <img style=" width: 150px; height: 150px;" src="Images/Waterloo.png"/>
+            <h4>Member</h4>
+            <h4>September 2025 -- Present</h4>
+            <button onclick="toggleDropdown('goldenHawks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="goldenHawks-desc" class="showDiv">
             <p>
               In this program I have gained knowledge about aircraft, aerodromes, and drill, while also developing leadership and, presentation, skills. I have participated in numerous Field Training Exercises (FTXs), where I acquired skills such as building fires, setting up tents, constructing shelters, and engaging in various other enjoyable and educational activities.
             </p>
           </div>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
-            <h3>1Up Architecture And Design Club</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/1Up.png"/>
-            <h4>Logistics Exectutive</h4>
-            <h4>2024-2025</h4>
-            <button onclick="toggleDropdown('1up-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+          <section class="sub-card">
+            <h3>Waterloo Hack The North 25'</h3>
+            <img style=" width: 150px; height: 150px;" src="Images/HackNorth.png"/>
+            <h4>Volunteer</h4>
+            <h4>September 2025</h4>
+            <button onclick="toggleDropdown('1up-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="1up-desc" class="showDiv">
             <p>
              At White Oaks Secondary School, I actively participated in the 1UP Youth City Builders Club, a student-led initiative affiliated with Urban Minds. This program empowers high school students across Ontario to engage in urban planning and design projects that positively impact their communities .
@@ -115,24 +113,50 @@
           </section>
         </div>
         <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
+            <h3>540 Golden Hawks Air Cadet Squadron</h3>
+            <img style=" width: 150px; height: 150px;" src="Images/Cadets.png"/>
+            <h4>Flight Sergeant</h4>
+            <h4>2020-2025</h4>
+            <button onclick="toggleDropdown('goldenHawks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+          <div id="goldenHawks-desc" class="showDiv">
+            <p>
+              In this program I have gained knowledge about aircraft, aerodromes, and drill, while also developing leadership and, presentation, skills. I have participated in numerous Field Training Exercises (FTXs), where I acquired skills such as building fires, setting up tents, constructing shelters, and engaging in various other enjoyable and educational activities.
+            </p>
+          </div>
+          </section>
+          <section class="sub-card">
+            <h3>1Up Architecture And Design Club</h3>
+            <img style=" width: 150px; height: 150px;" src="Images/1Up.png"/>
+            <h4>Logistics Exectutive</h4>
+            <h4>2024-2025</h4>
+            <button onclick="toggleDropdown('1up-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+          <div id="1up-desc" class="showDiv">
+            <p>
+             At White Oaks Secondary School, I actively participated in the 1UP Youth City Builders Club, a student-led initiative affiliated with Urban Minds. This program empowers high school students across Ontario to engage in urban planning and design projects that positively impact their communities .
+            </p>
+          </div>
+          </section>
+        </div>
+        <div class="subheadings">
+          <section class="sub-card">
             <h3>UMMA Martial Arts</h3>
             <img style=" width: 150px; height: 150px;" src="Images/UMMA.png"/>
             <h4>Green Stripe Student</h4>
             <h4>2023-2025</h4>
-            <button onclick="toggleDropdown('umma-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+            <button onclick="toggleDropdown('umma-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="umma-desc" class="showDiv">
             <p>
              Over the years at UMMA Martial Arts, I have cultivated a diverse set of skills that have significantly enhanced my physical abilities, mental resilience, and self-confidence. Currently, I hold a green stripe belt and am progressing toward achieving my green belt.
             </p>
           </div>
           </section>
-         <section style="background-color:lightseagreen; width:100%">
+         <section class="sub-card">
             <h3>Fundraising Dinner (ICNA Relief)</h3>
             <img style=" width: 150px; height: 150px;" src="Images/YLDP.png"/>
             <h4>Event Planner</h4>
             <h4>August 4, 2024</h4>
-            <button onclick="toggleDropdown('fund-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+            <button onclick="toggleDropdown('fund-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="fund-desc" class="showDiv">
             <p>
              On August 4, 2024, I collaborated with six fellow students to organize a fundraising event aimed at supporting humanitarian relief. Recognizing the urgent needs of those affected by the ongoing crisis, we partnered with ICNA Relief Canada, a reputable charitable organization known for its work in providing essential aid to vulnerable communities. The event surpassed our expectations, raising over $15,000 in donations.
@@ -141,24 +165,24 @@
           </section>
         </div>
         <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Laurier HawkHacks Hackathon</h3>
             <img style=" width: 150px; height: 150px;" src="Images/HawkHacks.png"/>
             <h4>Participant</h4>
             <h4>May 2024</h4>
-            <button onclick="toggleDropdown('laurier-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+            <button onclick="toggleDropdown('laurier-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="laurier-desc" class="showDiv">
             <p>
              HawkHacks 2024 was a prominent 36-hour hackathon held from May 17 to May 19, 2024, at Wilfrid Laurier University in Waterloo, Ontario. As one of Canada's largest student-run hackathons, it attracted over 1,200 registrants, with 701 participants attending in person. The event featured 190 teams submitting a total of 148 projects, fostering an environment rich in innovation and collaboration. 
             </p>
           </div>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>WhiteHat Jr and BYJU's Learning</h3>
             <img style=" width: 200px; height: 150px;" src="Images/BYJU.jpg"/>
             <h4>Computer Science Student</h4>
             <h4>2020-2022</h4>
-            <button onclick="toggleDropdown('byju-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+            <button onclick="toggleDropdown('byju-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="byju-desc" class="showDiv">
             <p>
              My journey into the world of coding began during the COVID-19 pandemic when I enrolled in WhiteHat Jr, an online coding platform later acquired by BYJU'S in 2020. This platform provided a structured introduction to programming, covering fundamental concepts such as logic, structure, sequencing, and algorithmic thinking .
@@ -168,15 +192,15 @@
         </div>
       </section>
 
-      <section id="volunteering">
+      <section class="glass" id="volunteering">
         <h2>Volunteering</h2>
         <div class="subheadings">
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <h3>Youth Leadership Development Program (ICNA Relief)</h3>
             <img style=" width: 150px; height: 150px;" src="Images/YouthICNA.png"/>
             <h4>20 Hrs</h4>
             <h4>July/August 2024</h4>
-             <button onclick="toggleDropdown('yldp-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('yldp-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="yldp-desc" class="showDiv">
             <p>
              Through the YLDP, I gained hands-on experience in leadership, public speaking, and event planning. Each week featured a new guest speaker from a different professional background, which gave me a broad and diverse understanding of leadership styles, community engagement, and organizational development.
@@ -184,12 +208,12 @@
             </p>
           </div>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Ramadan at Al Falah (Local Mosque)</h3>
             <img style=" width: 200px; height: 150px;" src="Images/Masjid.png"/>
             <h4>150 Hrs</h4>
             <h4>2023 and 2024</h4>
-             <button onclick="toggleDropdown('ramadan-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('ramadan-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="ramadan-desc" class="showDiv">
             <p>
              During the holy month of Ramadan in both 2023 and 2024, I dedicated over 100 volunteer hours supporting my local mosque and its congregation. My responsibilities included distributing water and dates for iftar, handing out food packages after nightly prayers, coordinating crowd flow, and assisting with on-site logistics to ensure a smooth and welcoming experience for all attendees.
@@ -198,24 +222,24 @@
           </section>
         </div>
         <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Poppy Selling (Air Cadets Fundraising)</h3>
             <img style=" width: 150px; height: 160px;" src="Images/Cadets.png"/>
             <h4>10 Hrs</h4>
             <h4>November 2023</h4>
-             <button onclick="toggleDropdown('cadet-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('cadet-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="cadet-desc" class="showDiv">
             <p>
              In November, I took part in a community-driven fundraising initiative in support of veterans for Remembrance Day. I helped raise approximately $200–$300 CAD by selling poppies and engaging with members of the public outside local retail stores.
             </p>
           </div>
           </section>
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <h3>ICNA Fest At Al Falah (ICNA Relief)</h3>
             <img style=" width: 150px; height: 150px;" src="Images/YLDP.png"/>
             <h4>20 Hrs</h4>
             <h4>2023 and 2024</h4>
-             <button onclick="toggleDropdown('icna-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('icna-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="icna-desc" class="showDiv">
             <p>
              I volunteered at ICNA Fest in both 2023 and 2024, contributing to the successful setup and execution of this large-scale community event. My responsibilities included assembling tents, arranging chairs, inflating and supervising bouncy castles, and assisting with overall event logistics.
@@ -224,12 +248,12 @@
           </section>
           </div>
           <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>HDSB Virtual Conversation Club</h3>
             <img style=" width: 150px; height: 150px;" src="Images/HDSB.png"/>
             <h4>7 Hrs</h4>
             <h4>Sept-Nov 2022</h4>
-             <button onclick="toggleDropdown('hdsb-desc')" class="showmore">Show More <i class="fas fa-chevron-down"></i></button>
+             <button onclick="toggleDropdown('hdsb-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="hdsb-desc" class="showDiv">
             <p>
              As a member of the HDSB Virtual Conversation Club, I engaged in weekly discussions designed to build social connections and strengthen communication skills. The program encouraged students to expand their networks, share experiences, and explore ways to get involved and contribute meaningfully to the local community.
@@ -239,10 +263,10 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section class="glass"id="projects">
         <h2>Projects</h2>
         <div class="subheadings">
-         <section style="background-color:lightseagreen; width:100%">
+         <section class="sub-card">
             <h3>Quran App</h3>
             <img style=" width: 150px; height: 150px;" src="Images/Quran.jpg"/>
             <h4>HTML, CSS and JavaScript</h4>
@@ -250,7 +274,7 @@
             <br/>
             <a href="https://cr7coder123.github.io/Quran-App/" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Play</a>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Ocean Grabber</h3>
             <img style=" width: 200px; height: 150px;" src="Images/Ocean Grabber.png"/>
             <h4>Python</h4>
@@ -261,7 +285,7 @@
           </section>
         </div>
         <div class="subheadings">
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <h3>Problems Around The World</h3>
             <img style=" width: 200px; height: 150px;" src="Images/Problems.png"/>
             <h4>JavaScript, HTML, and CSS</h4>
@@ -269,7 +293,7 @@
             <br/>
             <a href="https://cr7coder123.github.io/Problems-Around-The-World/" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Play</a>
           </section>
-         <section style="background-color:lightseagreen; width:100%">
+         <section class="sub-card">
             <h3>Fun Challenging Game</h3>
             <img style=" width: 180px; height: 170px;" src="Images/FunGame.png"/>
             <h4>JavaScript, HTML, and CSS</h4>
@@ -279,13 +303,13 @@
           </section>
           </div>
           <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Model Home</h3>
             <img style=" width: 200px; height: 200px;" src="Images/Home.png"/>
             <h4>Woodworking/Construction</h4>
             <h4>November 2023</h4>
           </section>
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <h3>Muskoka Chair</h3>
             <img style=" width: 150px; height: 200px;" src="Images/Muskoka.png"/>
             <h4>Woodworking/Construction</h4>
@@ -294,46 +318,46 @@
         </div>
       </section>
 
-       <section id="awards">
+       <section class="glass" id="awards">
         <h2>Awards/Honours</h2>
          <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Air Cadet Graduation Plaque</h3>
             <img style=" width: 200px; height: 170px;" src="Images/Plaque.png"/>
             <h4>June 2025</h4>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Air Cadet 5 Year Service Medal</h3>
             <img style=" width: 70px; height: 180px;" src="Images/5Medal.png"/>
             <h4>June 2025</h4>
             </section>
         </div>
         <div class="subheadings">
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <h3>Air Cadet 4 Year Service Medal</h3>
             <img style=" width: 120px; height: 200px;" src="Images/Medal.png"/>
             <h4>June 2024</h4>
           </section>
-         <section style="background-color:lightseagreen; width:100%">
+         <section class="sub-card">
             <h3>Grade 11 Honour Roll</h3>
             <img style=" width: 200px; height: 170px;" src="Images/11Honour.png"/>
             <h4>June 2024</h4>
           </section>
           </div>
         <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <h3>Grade 10 Honour Roll</h3>
             <img style=" width: 200px; height: 170px;" src="Images/10Honour.png"/>
             <h4>June 2023</h4>
           </section>
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <h3>Grade 9 Honour Roll</h3>
             <img style=" width: 200px; height: 170px;" src="Images/9Honour.png"/>
             <h4>June 2022</h4>
           </section>
         </div>
         <div class="subheadings">
-         <section style="background-color:lightseagreen; width:100%">
+         <section class="sub-card">
             <h3>Certifed Game Developer</h3>
             <img style=" width: 170px; height: 200px;" src="Images/GameDev.png"/>
             <h4>January 2021</h4>
@@ -341,27 +365,27 @@
         </div>
       </section>
 
-      <section id="skills">
+      <section class="glass" id="skills">
         <h2>Skills</h2>
          <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <img style=" width: 150px; height: 170px;" src="Images/JS.png"/>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <img style=" width: 120px; height: 150px;" src="Images/HTML.png"/>
           </section>
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <img style=" width: 200px; height: 170px;" src="Images/CSS.png"/>
           </section>
         </div>
         <div class="subheadings">
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <img style=" width: 150px; height: 170px;" src="Images/Python.png"/>
           </section>
-          <section style="background-color:lightseagreen; width:100%">
+          <section class="sub-card">
             <img style=" width: 120px; height: 150px;" src="Images/Auto.png"/>
           </section>
-           <section style="background-color:lightseagreen; width:100%">
+           <section class="sub-card">
             <img style=" width: 200px; height: 170px;" src="Images/Wood.png"/>
           </section>
         </div>
@@ -371,7 +395,7 @@
 
 
 <footer>
-&copy; 2025 Rayyan Hasan Goraya. All rights reserved.
+&copy; 2026 Rayyan Hasan Goraya. All rights reserved.
 </footer>
     
 
