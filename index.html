@@ -1,329 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Rayyan Hasan Goraya</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style.css" />
 </head>
-<body style="background-color: skyblue">
-    <header>
-      <nav class="glass">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#volunteering">Volunteering</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </header>
+<body>
 
-    <section class="glass">
-      <h1>Rayyan Hasan Goraya</h1>
-      <p style="margin-bottom:20px">Mathematics Student @ UWaterloo | Car Enthusiast | Seeking Fall 2026 Internships</p>
-      <a target="_blank" class="glass-btn" href="Resume.pdf" style="background-color: cadetblue; text-decoration: none;">Hire Me</a>
-      <section style="display:flex; flex-direction:row; background-color: transparent;">
-        <a class="glass-btn" href="https://www.linkedin.com/in/rayyanhasangoraya" target="_blank">
-          <i style="font-size:18px; margin-left:3px; text-decoration: none; color: white; " class="fa-brands fa-linkedin"></i>
-        </a>
-        <a class="glass-btn" href="https://www.instagram.com/rayhasgor07/" target="_blank">
-          <i style="font-size:18px; margin-left:3px; text-decoration: none; color: white; " class="fa-brands fa-instagram"></i>
-        </a>
-        <a class="glass-btn" href="https://github.com/rayhasgor07" target="_blank">
-          <i style="font-size:17px; margin:0px; text-decoration: none; color: white; " class="fa-brands fa-github"></i>
-        </a>
-      </section>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#volunteering">Volunteering</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero-section">
+    <h1>Rayyan Hasan Goraya</h1>
+    <p>Mathematics Student @ UWaterloo &nbsp;|&nbsp; Car Enthusiast &nbsp;|&nbsp; Seeking Fall 2026 Internships</p>
+    <div class="hero-links">
+      <a href="Resume.pdf" target="_blank" class="hire-btn">⚡ Hire Me</a>
+      <a href="https://www.linkedin.com/in/rayyanhasangoraya" target="_blank" class="social-btn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/rayhasgor07/" target="_blank" class="social-btn">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://github.com/rayhasgor07" target="_blank" class="social-btn">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-flex">
+        <img src="Images/Profile.png" alt="Profile photo" class="profile-pic" />
+        <p>I'm a First Year Mathematics student at the University of Waterloo with a strong passion for mathematics, computer science, and leadership. I strive to combine logic, creativity, and innovation to build meaningful technologies, and I'm always looking for ways to grow, lead, and make an impact. I've worked with JavaScript, HTML and CSS — creating websites, small games, and utility tools — and I'm currently exploring Unity and Blender to expand my game development abilities. I love combining visual design with code to create interactive experiences, and I plan to dive deeper into AI/ML, algorithms, and software engineering during university.</p>
+      </div>
     </section>
 
-    <div class="container">
-      <section class="glass"id="about">
-        <h2>About Me</h2>
-        <div class="about-flex">
-          <img src="Images/Profile.png" alt="Profile photo" class="profile-pic" />
-        <p>I’m a First Year Mathematics student at the University of Waterloo with a strong passion for mathematics, computer science, and leadership. I strive to combine logic, creativity, and innovation to build meaningful technologies, and I’m always looking for ways to grow, lead, and make an impact. I’ve worked with JavaScript, HTML and CSS. I’ve created websites, small games, and utility tools, and I’m currently exploring Unity and Blender to expand my game development abilities. I love combining visual design with code to create interactive experiences, and I plan to dive deeper into AI/ML, algorithms, and software engineering during university.
-        </p>
-        </div>
-      </section>
-
-      <section class="glass"id="education">
-        <h2>Education</h2><br/>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>University of Waterloo</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/Waterloo.png"/>
-            <h4>Bachelor of Mathematics (BMath) Degree</h4>
-            <h4>2025-2030</h4>
-             <button onclick="toggleDropdown('waterloo-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>University of Waterloo</h3>
+          <img style="width:130px;height:130px;" src="Images/Waterloo.png" />
+          <h4>Bachelor of Mathematics (BMath)</h4>
+          <h4>2025 – 2030</h4>
+          <button onclick="toggleDropdown('waterloo-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="waterloo-desc" class="showDiv">
-            <p>
-              Accepted into the Honours Mathematics program with a $2,000 entrance scholarship. I plan to major in Computational Mathematics. 
-              My focus is on software development, game development, artificial intelligence and machine learning. Activities and societies: Data Science Club, Computer Science Club, Math Soc Club, Pakistan Student Association, Muslim Student Association
-            </p>
+            <p>Accepted into the Honours Mathematics program with a $2,000 entrance scholarship. I plan to major in Computational Mathematics. My focus is on software development, game development, artificial intelligence and machine learning. Activities: Data Science Club, CS Club, Math Soc, Pakistan Student Association, Muslim Student Association.</p>
           </div>
-          </section>
-          <section class="sub-card">
-            <h3>White Oaks Secondary School</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/White Oaks.png"/>
-            <h4>Ontario Secondary School Diploma (OSSD)</h4>
-            <h4>2020-2025</h4>
-             <button onclick="toggleDropdown('whiteoaks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+        </section>
+        <section class="sub-card">
+          <h3>White Oaks Secondary School</h3>
+          <img style="width:130px;height:130px;" src="Images/White Oaks.png" />
+          <h4>Ontario Secondary School Diploma</h4>
+          <h4>2020 – 2025</h4>
+          <button onclick="toggleDropdown('whiteoaks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="whiteoaks-desc" class="showDiv">
-            <p>
-             Completed high school and developed strong problem-solving, teamwork, and communication skills through coursework and extracurricular involvement. 
-             Took initiative in leadership roles and consistently pursued opportunities to explore interests in architecture, design, computer science, and advanced mathematics. 
-             Outside of school I also earned around 200 volunteer hours from a variety of different experiences. 
-             Executive Member, 1UP Architecture and Design Club (Sept 2024 – June 2025)
-             Member, Muslim Student Association (MSA) (2021 – 2025)
-            </p>
+            <p>Completed high school developing strong problem-solving, teamwork, and communication skills. Took initiative in leadership roles and pursued interests in architecture, design, computer science, and advanced mathematics. Earned ~200 volunteer hours. Executive Member, 1UP Architecture and Design Club (2024–2025). Member, Muslim Student Association (2021–2025).</p>
           </div>
-          </section>
-        </div>
-      </section>
+        </section>
+      </div>
+    </section>
 
-      <section class="glass"id="experience">
-        <h2>Experience</h2><br/>
-         <div class="subheadings">
-          <section class="sub-card">
-            <h3>Waterloo CS and DS Club</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/Waterloo.png"/>
-            <h4>Member</h4>
-            <h4>September 2025 -- Present</h4>
-            <button onclick="toggleDropdown('csds-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>Waterloo CS & DS Club</h3>
+          <img style="width:130px;height:130px;" src="Images/Waterloo.png" />
+          <h4>Member</h4>
+          <h4>Sept 2025 – Present</h4>
+          <button onclick="toggleDropdown('csds-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="csds-desc" class="showDiv">
-            <p>
-              Expanded technical knowledge across data science and computer science by attending multiple hands-on workshops, hackathons, and guest lectures focused on real-world applications and emerging technologies.
-              Built professional connections with industry engineers and recruiters, including members of Tesla’s AI team, by actively engaging in networking events and technical discussions
-            </p>
+            <p>Expanded technical knowledge across data science and computer science by attending hands-on workshops, hackathons, and guest lectures. Built professional connections with industry engineers including members of Tesla's AI team through networking events and technical discussions.</p>
           </div>
-          </section>
-          <section class="sub-card">
-            <h3>Waterloo Hack The North 25'</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/HackNorth.png"/>
-            <h4>Volunteer</h4>
-            <h4>September 2025</h4>
-            <button onclick="toggleDropdown('hack-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+        </section>
+        <section class="sub-card">
+          <h3>Hack The North '25</h3>
+          <img style="width:130px;height:130px;" src="Images/HackNorth.png" />
+          <h4>Volunteer</h4>
+          <h4>September 2025</h4>
+          <button onclick="toggleDropdown('hack-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="hack-desc" class="showDiv">
-            <p>
-            Supported smooth execution of Canada’s largest hackathon by assisting with event logistics and security across 7 floors, ensuring safe and organized operations for thousands of participants. Enhanced participant experience by efficiently distributing refreshments and providing on-site support, while actively networking with hackers and organizers.
-            </p>
+            <p>Supported Canada's largest hackathon by assisting with event logistics and security across 7 floors, ensuring safe operations for hundreds of participants. Enhanced participant experience while actively networking with hackers and organizers.</p>
           </div>
-          </section>
-        </div>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>540 Golden Hawks Air Cadet Squadron</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/Cadets.png"/>
-            <h4>Flight Sergeant</h4>
-            <h4>2020-2025</h4>
-            <button onclick="toggleDropdown('goldenHawks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+        </section>
+      </div>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>540 Golden Hawks Air Cadets</h3>
+          <img style="width:130px;height:130px;" src="Images/Cadets.png" />
+          <h4>Flight Sergeant</h4>
+          <h4>2019 – 2025</h4>
+          <button onclick="toggleDropdown('goldenHawks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="goldenHawks-desc" class="showDiv">
-            <p>
-              In this program I have gained knowledge about aircraft, aerodromes, and drill, while also developing leadership and, presentation, skills. I have participated in numerous Field Training Exercises (FTXs), where I acquired skills such as building fires, setting up tents, constructing shelters, and engaging in various other enjoyable and educational activities.
-            </p>
+            <p>6 years of structured training in aircraft systems, aerodromes, drill, and command principles. Delivered presentations on aviation and leadership to junior cadets. Led outdoor training including fire building, tent setup, and survival techniques.</p>
           </div>
-          </section>
-          <section class="sub-card">
-            <h3>1Up Architecture And Design Club</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/1Up.png"/>
-            <h4>Logistics Exectutive</h4>
-            <h4>2024-2025</h4>
-            <button onclick="toggleDropdown('1up-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+        </section>
+        <section class="sub-card">
+          <h3>1Up Architecture & Design Club</h3>
+          <img style="width:130px;height:130px;" src="Images/1Up.png" />
+          <h4>Logistics Executive</h4>
+          <h4>2024 – 2025</h4>
+          <button onclick="toggleDropdown('1up-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="1up-desc" class="showDiv">
-            <p>
-             At White Oaks Secondary School, I actively participated in the 1UP Youth City Builders Club, a student-led initiative affiliated with Urban Minds. This program empowers high school students across Ontario to engage in urban planning and design projects that positively impact their communities.
-            </p>
+            <p>Served as Logistics Executive for the 1UP Architecture and Design Club, coordinating events and supporting the club's design initiatives throughout the school year.</p>
           </div>
-          </section>
-        </div>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>UMMA Martial Arts</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/UMMA.png"/>
-            <h4>Green Stripe Student</h4>
-            <h4>2023-2025</h4>
-            <button onclick="toggleDropdown('umma-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-          <div id="umma-desc" class="showDiv">
-            <p>
-             Over the years at UMMA Martial Arts, I have cultivated a diverse set of skills that have significantly enhanced my physical abilities, mental resilience, and self-confidence. Currently, I hold a green stripe belt and am progressing toward achieving my green belt.
-            </p>
+        </section>
+      </div>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>ICNA Relief Canada</h3>
+          <img style="width:130px;height:130px;" src="Images/YLDP.png" />
+          <h4>Youth Leadership Program</h4>
+          <h4>July – August 2024</h4>
+          <button onclick="toggleDropdown('icna-relief-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+          <div id="icna-relief-desc" class="showDiv">
+            <p>Led collaborative planning and execution of a fundraising initiative, raising $15,000 CAD by coordinating event logistics, outreach, and teamwork with a 6-person team. Strengthened leadership, communication, and project coordination skills.</p>
           </div>
-          </section>
-         <section class="sub-card">
-            <h3>Fundraising Dinner (ICNA Relief)</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/YLDP.png"/>
-            <h4>Event Planner</h4>
-            <h4>August 4, 2024</h4>
-            <button onclick="toggleDropdown('fund-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-          <div id="fund-desc" class="showDiv">
-            <p>
-             On August 4, 2024, I collaborated with six fellow students to organize a fundraising event aimed at supporting humanitarian relief. Recognizing the urgent needs of those affected by the ongoing crisis, we partnered with ICNA Relief Canada, a reputable charitable organization known for its work in providing essential aid to vulnerable communities. The event surpassed our expectations, raising over $15,000 in donations.
-            </p>
+        </section>
+        <section class="sub-card">
+          <h3>HawkHacks '24</h3>
+          <img style="width:130px;height:130px;" src="Images/HackNorth.png" />
+          <h4>Hackathon Participant</h4>
+          <h4>May 2024</h4>
+          <button onclick="toggleDropdown('hawkhacks-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+          <div id="hawkhacks-desc" class="showDiv">
+            <p>Participated at HawkHacks 2024 at Wilfrid Laurier University, collaborating in a 36-hour national hackathon and gaining exposure to university-level project development.</p>
           </div>
-          </section>
-        </div>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>Laurier HawkHacks Hackathon</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/HawkHacks.png"/>
-            <h4>Participant</h4>
-            <h4>May 2024</h4>
-            <button onclick="toggleDropdown('laurier-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-          <div id="laurier-desc" class="showDiv">
-            <p>
-             HawkHacks 2024 was a prominent 36-hour hackathon held from May 17 to May 19, 2024, at Wilfrid Laurier University in Waterloo, Ontario. As one of Canada's largest student-run hackathons, it attracted over 1,200 registrants, with 701 participants attending in person. The event featured 190 teams submitting a total of 148 projects, fostering an environment rich in innovation and collaboration. 
-            </p>
-          </div>
-          </section>
-          <section class="sub-card">
-            <h3>WhiteHat Jr and BYJU's Learning</h3>
-            <img style=" width: 200px; height: 150px;" src="Images/BYJU.jpg"/>
-            <h4>Computer Science Student</h4>
-            <h4>2020-2022</h4>
-            <button onclick="toggleDropdown('byju-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-          <div id="byju-desc" class="showDiv">
-            <p>
-             My journey into the world of coding began during the COVID-19 pandemic when I enrolled in WhiteHat Jr, an online coding platform later acquired by BYJU'S in 2020. This platform provided a structured introduction to programming, covering fundamental concepts such as logic, structure, sequencing, and algorithmic thinking .
-            </p>
-          </div>
-          </section>
-        </div>
-      </section>
+        </section>
+      </div>
+    </section>
 
-      <section class="glass" id="volunteering">
-        <h2>Volunteering</h2>
-        <div class="subheadings">
-           <section class="sub-card">
-            <h3>Youth Leadership Development Program (ICNA Relief)</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/YouthICNA.png"/>
-            <h4>20 Hrs</h4>
-            <h4>July/August 2024</h4>
-             <button onclick="toggleDropdown('yldp-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-          <div id="yldp-desc" class="showDiv">
-            <p>
-             Through the YLDP, I gained hands-on experience in leadership, public speaking, and event planning. Each week featured a new guest speaker from a different professional background, which gave me a broad and diverse understanding of leadership styles, community engagement, and organizational development.
-             The program pushed me out of my comfort zone and helped me grow significantly in my ability to collaborate with others and connect with people from different walks of life.
-            </p>
-          </div>
-          </section>
-          <section class="sub-card">
-            <h3>Ramadan at Al Falah (Local Mosque)</h3>
-            <img style=" width: 200px; height: 150px;" src="Images/Masjid.png"/>
-            <h4>150 Hrs</h4>
-            <h4>2023 and 2024</h4>
-             <button onclick="toggleDropdown('ramadan-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+    <!-- VOLUNTEERING -->
+    <section id="volunteering">
+      <h2>Volunteering</h2>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>Ramadan at Al Falah Mosque</h3>
+          <img style="width:180px;height:130px;" src="Images/Masjid.png" />
+          <h4>150+ Volunteer Hours</h4>
+          <h4>2023 & 2024</h4>
+          <button onclick="toggleDropdown('ramadan-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="ramadan-desc" class="showDiv">
-            <p>
-             During the holy month of Ramadan in both 2023 and 2024, I dedicated over 100 volunteer hours supporting my local mosque and its congregation. My responsibilities included distributing water and dates for iftar, handing out food packages after nightly prayers, coordinating crowd flow, and assisting with on-site logistics to ensure a smooth and welcoming experience for all attendees.
-            </p>
+            <p>Dedicated over 100 volunteer hours supporting my local mosque during Ramadan. Responsibilities included distributing water and dates for iftar, handing out food packages after nightly prayers, coordinating crowd flow, and assisting with on-site logistics.</p>
           </div>
-          </section>
-        </div>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>Poppy Selling (Air Cadets Fundraising)</h3>
-            <img style=" width: 150px; height: 160px;" src="Images/Cadets.png"/>
-            <h4>10 Hrs</h4>
-            <h4>November 2023</h4>
-             <button onclick="toggleDropdown('cadet-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-          <div id="cadet-desc" class="showDiv">
-            <p>
-             In November, I took part in a community-driven fundraising initiative in support of veterans for Remembrance Day. I helped raise approximately $200–$300 CAD by selling poppies and engaging with members of the public outside local retail stores.
-            </p>
-          </div>
-          </section>
-           <section class="sub-card">
-            <h3>ICNA Fest At Al Falah (ICNA Relief)</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/YLDP.png"/>
-            <h4>20 Hrs</h4>
-            <h4>2023 and 2024</h4>
-             <button onclick="toggleDropdown('icna-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+        </section>
+        <section class="sub-card">
+          <h3>ICNA Fest at Al Falah</h3>
+          <img style="width:130px;height:130px;" src="Images/YLDP.png" />
+          <h4>20 Volunteer Hours</h4>
+          <h4>2023 & 2024</h4>
+          <button onclick="toggleDropdown('icna-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="icna-desc" class="showDiv">
-            <p>
-             I volunteered at ICNA Fest in both 2023 and 2024, contributing to the successful setup and execution of this large-scale community event. My responsibilities included assembling tents, arranging chairs, inflating and supervising bouncy castles, and assisting with overall event logistics.
-            </p>
+            <p>Volunteered at ICNA Fest assembling tents, arranging chairs, supervising bouncy castles, and assisting with overall event logistics for this large-scale community event.</p>
           </div>
-          </section>
+        </section>
+        <section class="sub-card">
+          <h3>Poppy Selling – Air Cadets</h3>
+          <img style="width:130px;height:140px;" src="Images/Cadets.png" />
+          <h4>10 Volunteer Hours</h4>
+          <h4>November 2023</h4>
+          <button onclick="toggleDropdown('cadet-desc')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+          <div id="cadet-desc" class="showDiv">
+            <p>Raised approximately $200–$300 CAD for veterans on Remembrance Day by selling poppies and engaging with members of the public outside local retail stores.</p>
           </div>
-      </section>
+        </section>
+      </div>
+    </section>
 
-      <section class="glass"id="projects">
-        <h2>Projects</h2>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>MidNight Tuners</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/Midnight.jpg"/>
-            <h4>HTML, CSS, and JavaScript</h4>
-            <h4>Oct 2025 - Present</h4>
-            <br/>
-            <a href="https://rayhasgor07.github.io/MidNight-Tuners/" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Play</a>
-          </section>
-         <section class="sub-card">
-            <h3>Quran App</h3>
-            <img style=" width: 150px; height: 150px;" src="Images/Quran.jpg"/>
-            <h4>HTML, CSS and JavaScript</h4>
-            <h4>2024-2025</h4>
-            <br/>
-            <a href="https://rayhasgor07.github.io/Quran-App/" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Play</a>
-          </section>
-        </div>
-        <div class="subheadings">
-          <section class="sub-card">
-            <h3>Ocean Grabber</h3>
-            <img style=" width: 200px; height: 150px;" src="Images/Ocean Grabber.png"/>
-            <h4>Python</h4>
-            <h4>May/June 2024</h4>
-            <br/>
-            <a href="https://github.com/rayhasgor07/Ocean-Grabber" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Github</a>
-            <a href="https://www.youtube.com/watch?v=AUJsslGQf4c" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Video</a>
-          </section>
-           <section class="sub-card">
-            <h3>Problems Around The World</h3>
-            <img style=" width: 200px; height: 150px;" src="Images/Problems.png"/>
-            <h4>JavaScript, HTML, and CSS</h4>
-            <h4>January 2022</h4>
-            <br/>
-            <a href="https://rayhasgor07.github.io/Problems-Around-The-World/" target="_blank" style=" color:white; text-decoration: none;align-items: center; border-style: solid;border-color: white;border-radius: 20px;padding:7px;background-color: cadetblue;">Play</a>
-          </section>
-          </div>
-          <div class="subheadings">
-          <section class="sub-card">
-            <h3>Model Home</h3>
-            <img style=" width: 200px; height: 200px;" src="Images/Home.png"/>
-            <h4>Woodworking/Construction</h4>
-            <h4>November 2023</h4>
-            <button onclick="toggleDropdown('home')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>MidNight Tuners</h3>
+          <img style="width:140px;height:140px;border-radius:10px;" src="Images/Midnight.jpg" />
+          <h4>HTML · CSS · JavaScript · Firebase</h4>
+          <h4>Oct 2025 – Present</h4>
+          <br/>
+          <a href="https://rayhasgor07.github.io/MidNight-Tuners/" target="_blank" class="project-link">🚀 Live</a>
+        </section>
+        <section class="sub-card">
+          <h3>Quran App</h3>
+          <img style="width:140px;height:140px;border-radius:10px;" src="Images/Quran.jpg" />
+          <h4>HTML · CSS · JavaScript</h4>
+          <h4>2024 – 2025</h4>
+          <br/>
+          <a href="https://rayhasgor07.github.io/Quran-App/" target="_blank" class="project-link">🚀 Live</a>
+        </section>
+      </div>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>Ocean Grabber</h3>
+          <img style="width:180px;height:140px;border-radius:10px;" src="Images/Ocean Grabber.png" />
+          <h4>Python</h4>
+          <h4>May / June 2024</h4>
+          <br/>
+          <a href="https://github.com/rayhasgor07/Ocean-Grabber" target="_blank" class="project-link">GitHub</a>
+          <a href="https://www.youtube.com/watch?v=AUJsslGQf4c" target="_blank" class="project-link">▶ Video</a>
+        </section>
+        <section class="sub-card">
+          <h3>Problems Around The World</h3>
+          <img style="width:180px;height:140px;border-radius:10px;" src="Images/Problems.png" />
+          <h4>JavaScript · HTML · CSS</h4>
+          <h4>January 2022</h4>
+          <br/>
+          <a href="https://rayhasgor07.github.io/Problems-Around-The-World/" target="_blank" class="project-link">🚀 Play</a>
+        </section>
+      </div>
+      <div class="subheadings">
+        <section class="sub-card">
+          <h3>Model Home</h3>
+          <img style="width:180px;height:180px;border-radius:10px;" src="Images/Home.png" />
+          <h4>Woodworking / Construction</h4>
+          <h4>November 2023</h4>
+          <button onclick="toggleDropdown('home')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
           <div id="home" class="showDiv">
-            <p>
-              I constructed this house in my school construction class, an experience that greatly enhanced my understanding of residential architecture. I particularly enjoyed learning about the different parts of house construction, with a specific interest in roof design and roof pitches. This project featured a 4/12 pitch roof, and we were tasked with calculating the appropriate overhang to ensure optimal sunlight exposure—allowing sunlight in during the winter while keeping it out in the summer. My research included studying the winter and summer solstices to inform these calculations. This hands-on project deepened my appreciation for the complexities of home building and significantly expanded my knowledge in the field.            </p>
-          </section>
-           <section class="sub-card">
-            <h3>Muskoka Chair</h3>
-            <img style=" width: 150px; height: 200px;" src="Images/Muskoka.png"/>
-            <h4>Woodworking/Construction</h4>
-            <h4>January 2023</h4>
-            <button onclick="toggleDropdown('muskoka')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
-           <div id="muskoka" class="showDiv">
-            <p>
-              I built this Muskoka chair in my school construction class, which really sparked my interest in woodworking. This project helped me learn practical skills in design and craftsmanship, and it ignited a passion for creating functional and attractive projects. 
-            </p>
-          </section> 
-        </div>
-      </section>
+            <p>Constructed a model house in school construction class. Features a 4/12 pitch roof with calculated overhang for optimal sunlight — allowing light in during winter and blocking it in summer. Research included studying solar solstice angles to inform calculations.</p>
+          </div>
+        </section>
+        <section class="sub-card">
+          <h3>Muskoka Chair</h3>
+          <img style="width:140px;height:180px;border-radius:10px;" src="Images/Muskoka.png" />
+          <h4>Woodworking / Construction</h4>
+          <h4>January 2023</h4>
+          <button onclick="toggleDropdown('muskoka')" class="glass-btn">Show More <i class="fas fa-chevron-down"></i></button>
+          <div id="muskoka" class="showDiv">
+            <p>Built a Muskoka chair in school construction class, sparking a passion for woodworking and practical skills in design and craftsmanship.</p>
+          </div>
+        </section>
+      </div>
+    </section>
 
-    </div>
+  </div>
 
+  <footer>
+    &copy; 2026 Rayyan Hasan Goraya. All rights reserved.
+  </footer>
 
-<footer>
-&copy; 2026 Rayyan Hasan Goraya. All rights reserved.
-</footer>
-    
-
-<script>
+  <script>
     function toggleDropdown(id) {
       const el = document.getElementById(id);
-      if (!el) return console.warn(`Element with id="${id}" not found.`);
-      el.style.display = (el.style.display === 'none' || el.style.display === '') 
-        ? 'block' 
-        : 'none';
+      if (!el) return;
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
     }
   </script>
 </body>
